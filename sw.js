@@ -1,4 +1,4 @@
-const CACHE = 'ajedrez-v2.4.6';
+const CACHE = 'ajedrez-v2.4.7';
 const ENGINE_CACHE = 'ajedrez-motor-17.1-lite'; // el motor (7 MB) se guarda aparte y no se borra al actualizar la app
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
